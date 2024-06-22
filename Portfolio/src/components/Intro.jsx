@@ -1,27 +1,38 @@
 import React from "react";
-import Typist from "react-typist";
-import "react-typist/dist/Typist.css";
+import { TypeAnimation } from 'react-type-animation';
 import EmailIcon from "@mui/icons-material/Email";
-import FadeInSection from "./FadeInSection";
+import FadeInSection from "./FadeInSection"; // Ensure this component is correctly implemented
+import RubiksCubeSolver from "./RubiksCubeSolver";
 
 const Intro = () => {
   return (
-    <div id="intro" className="flex flex-col items-center justify-center text-center mx-auto max-w-4xl pt-48 min-h-screen">
-      <Typist avgTypingDelay={100} startDelay={1000} cursor={{ show: true, blink: true, element: "|" }}className="text-green-400 text-6xl">
-        <span className="text-6xl text-gray-300">
-          {"hi, "}
-          <span className="text-green-400 font-bold">{"debesh"}</span>
-          {" here."}
-        </span>
-      </Typist>
+    
+    <div id="intro" className="flex flex-col items-center justify-center text-center mx-auto max-w-4xl pt-48 min-h-screen"><RubiksCubeSolver/>
+      <TypeAnimation
+        avgTypingDelay={100}
+        startDelay={1000}
+        cursor={{ show: true, blink: true, element: "|" }}
+        className="text-green-400 text-6xl font-sans"
+        sequence={[
+          'hi, ',
+          500,
+          'hi, debesh here.',
+          500,
+        ]}
+      />
       {/* Content Section */}
       <FadeInSection>
-        <div className="mt-8 text-4xl text-gray-400 font-light">I create stuff sometimes.</div>
+        <div className="mt-8 text-4xl text-gray-400 font-light">
+          I create stuff sometimes.
+        </div>
         <div className="mt-4 text-lg text-gray-400 max-w-xl pb-12">
           I'm a CSE Student from Bhubaneswar, Odisha, India.
         </div>
-        <a href="mailto:debeshacharya30@gmail.com" className="text-lg font-bold text-green-400 px-6 py-2 border border-green-400 rounded hover:bg-gray-800">
-          <EmailIcon />
+        <a
+          href="mailto:debeshacharya30@gmail.com"
+          className="flex items-center justify-center text-lg font-bold text-green-400 w-32 h-10 border border-green-400 rounded hover:bg-blue-900 ml-32"
+        >
+          <EmailIcon className="mr-2 " />
           {" Say hi!"}
         </a>
       </FadeInSection>
