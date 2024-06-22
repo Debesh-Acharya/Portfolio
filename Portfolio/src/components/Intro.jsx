@@ -2,12 +2,14 @@ import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import EmailIcon from "@mui/icons-material/Email";
 import FadeInSection from "./FadeInSection"; // Ensure this component is correctly implemented
-import RubiksCubeSolver from "./RubiksCubeSolver";
+import { Button } from "@mui/material";
+// import RubiksCubeSolver from "./RubiksCubeSolver";
 
 const Intro = () => {
   return (
     
-    <div id="intro" className="flex flex-col items-center justify-center text-center mx-auto max-w-4xl pt-48 min-h-screen"><RubiksCubeSolver/>
+    <div id="intro" className="flex flex-col items-center justify-center text-center mx-auto max-w-4xl pt-48 min-h-screen">
+      {/* <RubiksCubeSolver/> */}
       <TypeAnimation
         avgTypingDelay={100}
         startDelay={1000}
