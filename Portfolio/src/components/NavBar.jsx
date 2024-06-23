@@ -5,6 +5,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const NavBar = () => {
+  const scrollToAbout = (event) => {
+    event.preventDefault();
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToHome = (event) => {
+    event.preventDefault();
+    document.getElementById("intro").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <nav className="bg-gray-900 text-white fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center font-sans">
@@ -13,10 +21,10 @@ const NavBar = () => {
             Debesh Acharya
           </a>
           <div className="ml-4 flex space-x-4 font-semibold text-sm">
-            <a className="hover:text-green-200" href="#intro">
+            <a className="hover:text-green-200" href="#intro" onClick={scrollToHome}>
               Home
             </a>
-            <a className="hover:text-green-200" href="#about">
+            <a className="hover:text-green-200" href="#about" onClick={scrollToAbout}>
               About
             </a>
             <a className="hover:text-green-200" href="#experience">

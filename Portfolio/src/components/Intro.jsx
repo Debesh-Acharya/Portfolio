@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import { TypeAnimation } from 'react-type-animation';
 import EmailIcon from "@mui/icons-material/Email";
-import FadeInSection from "./FadeInSection"; // Ensure this component is correctly implemented
-// import RubiksCubeSolver from "./RubiksCubeSolver";
+import FadeInSection from "./FadeInSection";
 
 const Intro = () => {
+  const aboutRef = useRef(null);
+
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to About section
+  };
+
   return (
-    
     <div id="intro" className="flex flex-col items-center justify-center text-center mx-auto max-w-4xl pt-48 min-h-screen">
-      {/* <RubiksCubeSolver/> */}
       <TypeAnimation
         avgTypingDelay={100}
         startDelay={1000}
         cursor={{ show: true, blink: true, element: "|" }}
-        className=" text-teal-200 text-6xl font-sans font-semibold"
+        className="text-teal-200 text-6xl font-sans font-semibold"
         sequence={[
           'hi, ',
           500,
@@ -21,7 +24,6 @@ const Intro = () => {
           500,
         ]}
       />
-      {/* Content Section */}
       <FadeInSection>
         <div className="mt-8 text-4xl text-gray-400 font-sans font-normal">
           I create stuff sometimes.
@@ -33,10 +35,11 @@ const Intro = () => {
           href="mailto:debeshacharya30@gmail.com"
           className="flex items-center justify-center text-lg font-bold text-teal-200 w-32 h-10 border border-teal-200 rounded hover:bg-gray-700 ml-32"
         >
-          <EmailIcon className="mr-2 " />
+          <EmailIcon className="mr-2" />
           {" Say hi!"}
         </a>
       </FadeInSection>
+      <div ref={aboutRef} /> {/* Empty div to mark the scroll target */}
     </div>
   );
 };

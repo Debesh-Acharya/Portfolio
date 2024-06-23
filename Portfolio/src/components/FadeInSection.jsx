@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-const FadeInSection = (props) => {
-  const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef();
+const FadeInSection = ({ children, delay = '0ms' }) => {
+  const [isVisible, setVisible] = useState(false);
+  const domRef = useRef();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -13,6 +13,7 @@ const FadeInSection = (props) => {
         }
       });
     });
+
     observer.observe(domRef.current);
     return () => observer.disconnect(); // Cleanup on unmount
   }, []);
@@ -22,10 +23,10 @@ const FadeInSection = (props) => {
       className={`transform transition-opacity duration-700 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
-      style={{ transitionDelay: `${props.delay}` }}
+      style={{ transitionDelay: delay }}
       ref={domRef}
     >
-      {props.children}
+      {children}
     </div>
   );
 };
