@@ -25,10 +25,10 @@ const Intro = () => {
         ]}
       />
       <FadeInSection>
-        <div className="mt-8 text-4xl text-gray-400 font-sans font-normal">
+        <div className="mt-8 text-4xl text-slate-400 font-sans font-normal">
           I create stuff sometimes.
         </div>
-        <div className="mt-4 text-lg text-gray-400 max-w-xl pb-12 font-sans font-light">
+        <div className="mt-4 text-lg text-slate-400 max-w-xl pb-12 font-sans font-light">
           I'm a CSE Student from Bhubaneswar, Odisha, India.
         </div>
         <a
