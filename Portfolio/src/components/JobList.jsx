@@ -39,7 +39,6 @@ const JobList = () => {
         "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
       ],
     },
-    
   ];
 
   const handleChange = (event, newValue) => {
@@ -47,18 +46,18 @@ const JobList = () => {
   };
 
   return (
-    <div className="root min-h-screen mx-auto max-w-1000 px-8 pt-32">
+    <div className="root min-h-screen mx-auto max-w-1000 px-0 pt-36">
       <div className="flex">
         <Tabs
           orientation={horizontal ? "horizontal" : "vertical"}
           variant={horizontal ? "fullWidth" : "scrollable"}
           value={value}
           onChange={handleChange}
-          className={horizontal ? "w-1/4 pr-8" : "mb-8"}
+          className={horizontal ? "w-full pr-8" : "w-1/4 mb-8"}
           TabIndicatorProps={{
             style: {
               backgroundColor: "#319795",
-              height: horizontal ? "2px" : "25%",
+              height: horizontal ? "2px" : "17%",
               width: horizontal ? "auto" : "2px",
             },
           }}
@@ -72,7 +71,7 @@ const JobList = () => {
                 value === index ? "text-teal-200" : "text-slate-400"
               } focus:outline-none`}
               style={{
-                color: value === index ? "#64ffda" : "#a8b2d1", // Teal 200
+                color: value === index ? "#64ffda" : "#a8b2d1",
               }}
             />
           ))}
@@ -91,14 +90,14 @@ const JobList = () => {
                 <span className="font-bold text-lg text-slate-400">
                   {item.jobTitle}
                 </span>{" "}
-                <span className="text-teal-200 mb-5">{item.company}</span>
+                <span className="text-teal-200 font-bold">{item.company}</span>
                 <div className="text-slate-400">{item.duration}</div>
               </div>
               <ul className="list-none ml-0 mt-4 text-left text-slate-400">
                 {item.desc.map((descItem, j) => (
                   <FadeInSection delay={`${j + 1}00ms`} key={j}>
                     <li className="relative pl-6 pb-4">
-                      <span className="text-teal-200 absolute left-0 top-0 text-green-bright">▹</span>
+                      <span className="text-teal-200 absolute left-0 top-0">▹</span>
                       {descItem}
                     </li>
                   </FadeInSection>

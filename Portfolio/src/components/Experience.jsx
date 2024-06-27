@@ -11,10 +11,10 @@ const Experience = () => {
   };
 
   return (
-    <div id="experience">
+    <div id="experience" className="md:p-10 lg:p-20">
       <FadeInSection>
         <div className="section-header">
-          <span className="section-title flex place-items-start font-sans section-title text-white text-5xl font-normal ml-24 -mb-20 mt-20">/ experience</span>
+          <span className="flex place-items-start font-sans section-title text-white text-5xl font-normal ml-4 -mb-20 mt-20">/ experience</span>
         </div>
         <JobList />
       </FadeInSection>
