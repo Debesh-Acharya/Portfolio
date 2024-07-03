@@ -30,9 +30,9 @@ const JobList = () => {
       ],
     },
     {
-      company: "Wattpad",
-      jobTitle: "Associate Engineer @",
-      duration: "MAY 2020 - APR 2021",
+      company: "MLSA KIIT",
+      jobTitle: "Corporate and Public Relations Executive @",
+      duration: "MAR 2023 - PRESENT",
       desc: [
         "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
         "Iteratively built web experiences for 80 million users across high-traffic pages.",

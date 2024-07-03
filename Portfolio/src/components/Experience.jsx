@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import JobList from "./JobList";
 import FadeInSection from "./FadeInSection";
 
 const Experience = () => {
+  const aboutRef = useRef(null);
   const [expanded, setExpanded] = useState(true);
   const [activeKey, setActiveKey] = useState("1");
 

@@ -13,6 +13,10 @@ const NavBar = () => {
     event.preventDefault();
     document.getElementById("intro").scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToExperience = (event)=>{
+    event.preventDefault();
+    document.getElementById("experience").scrollIntoView({behavior:'smooth'});
+  }
   return (
     <nav className="bg-gray-900 text-white fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center font-sans">
@@ -27,7 +31,7 @@ const NavBar = () => {
             <a className="hover:text-green-200" href="#about" onClick={scrollToAbout}>
               About
             </a>
-            <a className="hover:text-green-200" href="#experience">
+            <a className="hover:text-green-200" href="#experience" onClick={scrollToExperience}>
               Experience
             </a>
             <a className="hover:text-green-200" href="#projects">
