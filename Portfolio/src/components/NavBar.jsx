@@ -2,7 +2,7 @@ import React from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import FileOpenIcon from '@mui/icons-material/FileOpen';
 
 const NavBar = () => {
   const scrollToAbout = (event) => {
@@ -61,11 +61,11 @@ const NavBar = () => {
           </a>
           <a
             className="hover:text-green-200"
-            href="https://www.instagram.com/debeshacharya_"
+            href="https://drive.google.com/file/d/1J8exrC4_m6Yzf2_JCZxfOmSA1MwXEjob/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <InstagramIcon style={{ fontSize: 20 }} />
+            <FileOpenIcon style={{ fontSize: 20 }} />
           </a>
         </div>
       </div>
