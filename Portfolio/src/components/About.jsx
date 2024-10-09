@@ -38,7 +38,7 @@ const About = () => {
     <div id="about" ref={aboutRef} className="min-h-[50vh] mx-auto max-w-[1000px] pt-[100px]">
       <FadeInSection>
         <div className="section-header">
-          <span className=" flex place-items-start font-sans mb-10 section-title text-white text-5xl font-normal ml-1">/ about me</span>
+          <span className=" flex place-items-start font-NTR font-sans-serif mb-10 section-title text-lightest-slate text-5xl font-semibold ml-1">/ about me</span>
         </div>
         <div className="about-content flex flex-row">
           <div className="about-description font-sans text-slate-400 max-w-[600px] text-justify text-lg sm:text-base">

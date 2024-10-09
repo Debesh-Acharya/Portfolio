@@ -47,7 +47,7 @@ const JobList = () => {
   };
 
   return (
-    <div className="root min-h-screen mx-auto max-w-1000 px-0 pt-36">
+    <div className="root min-h-screen mx-auto max-w-1000 px-0 pt-36 pb-0 mb-0 ">
       <div className="flex">
         <Tabs
           orientation={horizontal ? "horizontal" : "vertical"}
