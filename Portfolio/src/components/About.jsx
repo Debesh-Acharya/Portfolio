@@ -20,12 +20,11 @@ const About = () => {
   );
 
   const tech_stack = [
-    "HTML",
-    "CSS",
     "Java",
     "Javascript ES6+",
     "React.js",
-    "Tailwind CSS"
+    "Tailwind CSS",
+    "Express.js",
   ];
 
   // Use the relative path to the image in the public directory
