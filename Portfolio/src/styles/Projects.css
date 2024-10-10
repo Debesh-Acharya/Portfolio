@@ -116,6 +116,7 @@
     object-fit: contain;
     height: 100%;
     opacity: 0.5;
+    
   }
   
   .carousel-caption {
@@ -129,25 +130,25 @@
   .carousel-caption h3 {
     font-size: 38px;
     font-weight: bold;
-    color: var(--lightest-slate);
+    color: #ccd6f6;
   }
   
   .carousel-caption p {
     font-family: "NTR", sans-serif;
     font-weight: bold;
     font-size: 18px;
-    color: var(--lightest-slate);
+    color: #ccd6f6;
   }
   
   .carousel-caption p.techStack {
     font-family: "NTR", sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color: var(--green-bright);
+    color: #64ffda;
   }
   
   .carousel-indicators .active {
-    background-color: var(--green-bright);
+    background-color: #64ffda;
   }
   
   @media only screen and (max-width: 600px) {
