@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+    #intro {
+      min-height: unset;
+      padding-left: unset;
+      padding-top: unset;
+      margin: 0;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-title {
+      font-size: 46px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .intro-name {
+      font-size: 46px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .intro-subtitle {
+      margin: 0;
+      font-size: 28px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .intro-desc {
+      font-size: 18px;
+      max-width: unset;
+      padding-bottom: 40px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .intro-contact {
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  

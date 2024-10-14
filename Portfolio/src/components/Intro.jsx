@@ -28,15 +28,15 @@ const Intro = () => {
         <div className="mt-8 text-4xl text-slate-400 font-sans font-normal">
           I create stuff sometimes.
         </div>
-        <div className="mt-4 text-lg text-slate-400 max-w-xl pb-12 font-sans font-light">
+        <div className="mt-4 text-lg text-slate-400 max-w-xl mx-4 pb-12 font-sans font-light">
           I'm a CSE Student from Bhubaneswar, Odisha, India.
         </div>
         <a
           href="mailto:debeshacharya30@gmail.com"
-          className="flex items-center justify-center text-lg font-bold text-teal-200 w-32 h-10 border border-teal-200 rounded hover:bg-gray-700 ml-32"
+          className="flex items-center justify-center text-lg font-bold text-teal-200 w-32 h-10 border border-teal-200 rounded hover:bg-gray-700 mx-auto"
         >
           <EmailIcon className="mr-2" />
-          {" Say hi!"}
+          {"Say hi!"}
         </a>
       </FadeInSection>
       <div ref={aboutRef} /> {/* Empty div to mark the scroll target */}

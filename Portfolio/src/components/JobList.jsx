@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import FadeInSection from "./FadeInSection";
-
+import '../styles/Experience.css'
 const isHorizontal = () => window.innerWidth < 600;
 
 const JobList = () => {
@@ -47,7 +47,7 @@ const JobList = () => {
   };
 
   return (
-    <div className="root min-h-screen mx-auto max-w-1000 px-0 pt-36 pb-0 mb-0 ">
+    <div className="root min-h-1 mx-auto max-w-1000 px-0 pt-36 pb-0 mb-0 ">
       <div className="flex">
         <Tabs
           orientation={horizontal ? "horizontal" : "vertical"}

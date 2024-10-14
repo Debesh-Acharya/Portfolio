@@ -1,0 +1,13 @@
+/* General styling for the navbar */
+.nav-title,
+.nav-links a {
+  display: inline-block; /* Ensure that the links are displayed properly on larger screens */
+}
+
+/* Hide Debesh Acharya and navigation links on small screens */
+@media only screen and (max-width: 600px) {
+  .nav-title,
+  .nav-links {
+    display: none;
+  }
+}

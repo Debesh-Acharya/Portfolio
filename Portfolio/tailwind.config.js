@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lightest-slate': '#ccd6f6',
+        '--lightest-slate': '#ccd6f6',
         '--dark-navy': '#020c1b',
         '--navy': '#0a192f',
         '--light-navy': '#112240',

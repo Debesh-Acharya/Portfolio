@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import FadeInSection from "./FadeInSection";
+import '../styles/About.css'
 
 const About = () => {
   const aboutRef = useRef(null); // Create a ref for the About section
