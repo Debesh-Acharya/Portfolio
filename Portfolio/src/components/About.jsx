@@ -7,7 +7,7 @@ const About = () => {
 
   const one = (
     <p>
-      I am currently a <b>2nd year Computer Science undergrad</b> at
+      I am currently a <b>3rd year Computer Science undergrad</b> at
       <b><a href="https://kiit.ac.in/" style={{ color: "#64ffda"}}> Kalinga Institute of Industrial Technology</a></b>
     </p>
   );
