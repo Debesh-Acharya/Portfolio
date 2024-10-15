@@ -43,12 +43,12 @@ const About = () => {
         </div>
         <div className="about-content flex flex-row">
           <div className="about-description font-sans text-slate-400 max-w-[600px] text-justify text-lg sm:text-base">
-            {[one]}
+            {one}
             <br/>
             <p>Here are some technologies I have been working with:</p>
             <ul className="pt-5 list-none grid grid-cols-2 gap-y-2">
-              {tech_stack.map((tech_item, i) => (
-                <FadeInSection key={i} delay={`${i + 1}00ms`}>
+              {tech_stack.map((tech_item, index) => (
+                <FadeInSection key={index} delay={`${index + 1}00ms`}>
                   <li className="relative pl-5 text-lg text-slate-400 before:content-['▹'] before:text-teal-200 before:absolute before:left-0">
                     {tech_item}
                   </li>

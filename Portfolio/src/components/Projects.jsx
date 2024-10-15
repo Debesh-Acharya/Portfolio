@@ -7,10 +7,10 @@ import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
 const Projects = () => {
-  const [activeKey, setActiveKey] = useState("1");
+  const [activeKey, setActiveKey] = useState(0);
 
-  const handleSelect = (eventKey) => {
-    setActiveKey(eventKey);
+  const handleSelect = (selectedIndex) => {
+    setActiveKey(selectedIndex);
   };
 
   const spotlightProjects = {
@@ -52,9 +52,9 @@ const Projects = () => {
     <div id="projects">
       <div className="section-header mt-0">
         <div className="section-title">
-        <span className="flex items-start font-semibold mb-10 text-5xl mt-1 ml-1 text-lightest-slate">
-    / pet projects
-  </span>
+          <span className="flex items-start font-semibold mb-10 text-5xl mt-1 ml-1 text-lightest-slate">
+            / pet projects
+          </span>
         </div>
       </div>
       <Carousel activeIndex={activeKey} onSelect={handleSelect}>
@@ -68,14 +68,12 @@ const Projects = () => {
             <div className="caption-bg">
               <Carousel.Caption>
                 <h3>{spotlightProjects[key].title}</h3>
-                <p>
-                  {spotlightProjects[key].desc}
-                  <p className="techStack">{spotlightProjects[key].techStack}</p>
-                </p>
+                <p>{spotlightProjects[key].desc}</p>
+                <p className="techStack">{spotlightProjects[key].techStack}</p>
                 <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
+                  githubLink={spotlightProjects[key]["link"]}
+                  openLink={spotlightProjects[key]["open"]}
+                />
               </Carousel.Caption>
             </div>
           </Carousel.Item>
@@ -91,9 +89,9 @@ const Projects = () => {
                     <FolderOpenIcon style={{ fontSize: 35 }} />
                   </div>
                   <ExternalLinks
-                      githubLink={projects[key]["link"]}
-                      openLink={projects[key]["open"]}
-                    ></ExternalLinks>
+                    githubLink={projects[key]["link"]}
+                    openLink={projects[key]["open"]}
+                  />
                 </div>
                 <div className="card-title">{key}</div>
                 <div className="card-desc">{projects[key].desc}</div>
