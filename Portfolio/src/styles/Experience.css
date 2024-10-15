@@ -1,25 +1,52 @@
-@media only screen and (max-width: 600px) {
-    #experience {
-      padding-left: unset;
-      padding-right: unset;
-    }
-  
-    .jss1 {
-      height: unset !important;
-      flex-direction: column !important;
-    }
-  
-    .makeStyles-root-1 {
-      height: unset !important;
-      width: unset;
-      flex-direction: column;
-    }
-  
-    .joblist-job-title {
-      font-size: 22px;
-    }
-  
-    .joblist-job-company {
-      font-size: 22px;
-    }
+/* Experience.css */
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.experience-flex { /* Scoped class for Experience section */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs {
+  flex: 1;
+}
+
+.tab-panel {
+  flex: 3;
+}
+
+/* Styles specific to the Experience section for small screens */
+@media (max-width: 600px) {
+  .experience-flex { /* Use the scoped class here */
+    flex-direction: column; /* Stack items vertically */
   }
+  
+  .tabs {
+    order: 1; /* Make tabs come first on small screens */
+    margin-bottom: 20px; /* Space between tabs and content */
+  }
+
+  .tab-panel {
+    order: 2; /* Content comes after tabs */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Additional adjustments for job titles and descriptions */
+  .joblist-job-title,
+  .joblist-job-company {
+    font-size: 22px; /* Increase font size for better readability */
+  }
+
+  .joblist-job-description {
+    font-size: 18px; /* Adjust description font size */
+    margin-top: 0.5rem; /* Space between job title and description */
+  }
+
+  .joblist-item {
+    margin-bottom: 1rem; /* Space between job list items */
+  }
+}

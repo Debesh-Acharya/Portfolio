@@ -48,7 +48,7 @@ const JobList = () => {
 
   return (
     <div className="root min-h-1 mx-auto max-w-1000 px-0 pt-36 pb-0 mb-0 ">
-      <div className="flex">
+      <div className="experience-flex">
         <Tabs
           orientation={horizontal ? "horizontal" : "vertical"}
           variant={horizontal ? "fullWidth" : "scrollable"}
