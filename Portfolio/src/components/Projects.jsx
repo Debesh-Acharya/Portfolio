@@ -27,6 +27,13 @@ const Projects = () => {
       techStack: "React.js, Tailwind",
       link: "https://github.com/Debesh-Acharya/React/tree/main/12MegaBlog",
       image: "/blogg.png"
+    },
+    ems:{
+      title: "EMS",
+      desc: "An Employee Task Management System enabling admins to assign and track tasks for streamlined task oversight and productivity monitoring.",
+      techStack: "React.js, Tailwind",
+      link: "https://github.com/Debesh-Acharya/ems.git",
+      image: "/ems.png"
     }
   };
 
