@@ -14,6 +14,13 @@ const Projects = () => {
   };
 
   const spotlightProjects = {
+    Chatty:{
+      title:"Chatty",
+      desc: "A real-time messaging app built with the MERN stack and Socket.io for seamless, interactive communication.",
+      techStack:"MERN, Socket.io, Tailwind CSS",
+      link:"https://github.com/Debesh-Acharya/Chat-app.git",
+      image:"/Chatty.png"
+    },
     "Wall-e": {
       title: "Wall - e",
       desc: "An application that transforms text prompts into stunning images using AI.",

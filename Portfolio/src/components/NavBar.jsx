@@ -64,7 +64,7 @@ const NavBar = () => {
           </a>
           <a
             className="hover:text-green-200"
-            href="https://drive.google.com/file/d/1Xmsj9XpP_imWFBI5qbKSRRxtaElyYRly/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1N4xKOImdAso1ZVjrap7vNumld0kU4gnR/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
           >
